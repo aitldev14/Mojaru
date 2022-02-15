@@ -1,0 +1,15 @@
+*{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* get all things content section */
+.mojaru-content-section{
+
+    background-color: #532D80;
+    margin-top: 5rem;
+}
+
+/* thinking content section */
+.mojaru-thinking-content-section{
+    background-color: #F4F4F4;
+}
