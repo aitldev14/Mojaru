@@ -9,14 +9,14 @@
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400, wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
     <!-- font icon script -->
     <script src="https://kit.fontawesome.com/1a01ea0cc4.js" crossorigin="anonymous"></script>
     <title>Home</title>
     <style>
-        .background-1 {
+        .background {
             width: 100%;
             height: 100vh;
             background: url('images/bg_slider.png') center/contain;
@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- header section -->
-    <header style="border-bottom: 1px solid #532D80;"> 
+    <header class="sticky-top" style="border-bottom: 1px solid #532D80;"> 
         <div class="d-flex justify-content-between ps-5 pe-5 pt-3" style="background-color: #532D80;">
             <div class="">
                 <i class="fa-brands fa-facebook ps-3 text-white"></i>
@@ -71,7 +71,7 @@
     <!-- main section -->
     <main>
         <!-- top section -->
-        <section class="background-1">
+        <section class="background">
             <h1 class="text-center pt-5 display-3" >মজার <span style="color: #F27321;">শিক্ষাগুরু,</span> মজার শিক্ষা শুরু</h1>
             <p class="fs-3 text-center pt-2">বাংলাদেশের সেরা ই-লার্নিং প্লাটফর্ম, পাঠ্যবইয়ের সব বিষয়গুলোকে</p>
             <p class="fs-3 text-center ">মজা করে, আনন্দ দিয়ে পড়াবে।</p>
@@ -129,20 +129,20 @@
 
             </div>
 
-              <div class="container-fluid mt-5 mb-5" style="padding-left: 4rem; padding-right: 4rem;">
+              <div class="container mt-5 mb-5" style="">
                   
                 <div class="row gy-4">
                     <div class="col">
                         <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
+                                <div class="col-lg-5">
+                                    <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                     <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
                                     </div>
-                                    <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর জুনিয়র্স</p>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/video.png" alt=""> 
@@ -160,13 +160,13 @@
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                        <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                         </div>
                                         
-                                        <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                        <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                     </div>
     
-                                    <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; border-style: solid;
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                     border-color: #F27321; color: #F27321;">আরো দেখুন</a>
     
     
@@ -177,39 +177,39 @@
                     <div class="col">
                       <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                           <div class="row">
-                              <div class="col-lg-4">
-                                <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
-                              </div>
-                              <div class="col-lg-8">
-                                  <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
-                                  <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
-                                  </div>
-                                  <p class="fw-bold pt-2" style="font-size: 23px">রোবটিক্স ফর জুনিয়র্স</p>
-                                  <div class="d-flex">
-                                      <div>
-                                          <img src="images/video.png" alt=""> 
-                                      </div>
-                                          <p class="ms-2">৫৭ ফ্রি ভিডিও</p>
-                                  </div>
-  
-                                  <div class="d-flex">
-                                      <div>
-                                          <img src="images/live-streaming.png" alt=""> 
-                                      </div>
-                                  <p class="ms-2">লাইভ ক্লাস</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
+                            <div class="col-lg-5">
+                                <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
+                            </div>
+                            <div class="col-lg-7">
+                                <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
+                                <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
+                                </div>
+                                <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="images/video.png" alt=""> 
+                                    </div>
+                                        <p class="ms-2">৫৭ ফ্রি ভিডিও</p>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="images/live-streaming.png" alt=""> 
+                                    </div>
+                                <p class="ms-2">লাইভ ক্লাস</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                    <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                    <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                     </div>
                                     
-                                    <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                    <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                 </div>
-  
-                                  <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
-                                  border-color: #F27321; color: #F27321;">আরো দেখুন</a>
+
+                                <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
+                                border-color: #F27321; color: #F27321;">আরো দেখুন</a>
   
   
                               </div>
@@ -219,14 +219,14 @@
                     <div class="col">
                         <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
+                                <div class="col-lg-5">
+                                    <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                     <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
                                     </div>
-                                    <p class="fw-bold pt-2" style="font-size: 23px">রোবটিক্স ফর জুনিয়র্স</p>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/video.png" alt=""> 
@@ -244,13 +244,13 @@
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                        <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                         </div>
                                         
-                                        <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                        <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                     </div>
     
-                                    <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                     border-color: #F27321; color: #F27321;">আরো দেখুন</a>
     
     
@@ -264,14 +264,14 @@
                         <div class="col">
                             <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
+                                    <div class="col-lg-5">
+                                        <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                         <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
                                         </div>
-                                        <p class="fw-bold pt-2" style="font-size: 23px">রোবটিক্স ফর জুনিয়র্স</p>
+                                        <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
                                         <div class="d-flex">
                                             <div>
                                                 <img src="images/video.png" alt=""> 
@@ -289,13 +289,13 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                            <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                            <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                             </div>
                                             
-                                            <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                            <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                         </div>
         
-                                        <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                        <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                         border-color: #F27321; color: #F27321;">আরো দেখুন</a>
         
         
@@ -306,39 +306,39 @@
                         <div class="col">
                           <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                               <div class="row">
-                                  <div class="col-lg-4">
-                                    <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
-                                  </div>
-                                  <div class="col-lg-8">
-                                      <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
-                                      <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
-                                      </div>
-                                      <p class="fw-bold pt-2" style="font-size: 23px">রোবটিক্স ফর জুনিয়র্স</p>
-                                      <div class="d-flex">
-                                          <div>
-                                              <img src="images/video.png" alt=""> 
-                                          </div>
-                                              <p class="ms-2">৫৭ ফ্রি ভিডিও</p>
-                                      </div>
-      
-                                      <div class="d-flex">
-                                          <div>
-                                              <img src="images/live-streaming.png" alt=""> 
-                                          </div>
-                                      <p class="ms-2">লাইভ ক্লাস</p>
-                                      </div>
-      
-                                      <div class="d-flex justify-content-between">
+                                <div class="col-lg-5">
+                                    <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
+                                </div>
+                                <div class="col-lg-7">
+                                    <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
+                                    <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
+                                    </div>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="images/video.png" alt=""> 
+                                        </div>
+                                            <p class="ms-2">৫৭ ফ্রি ভিডিও</p>
+                                    </div>
+    
+                                    <div class="d-flex">
+                                        <div>
+                                            <img src="images/live-streaming.png" alt=""> 
+                                        </div>
+                                    <p class="ms-2">লাইভ ক্লাস</p>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                        <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                         </div>
                                         
-                                        <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                        <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                     </div>
-      
-                                      <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
-                                      border-color: #F27321; color: #F27321;">আরো দেখুন</a>
+    
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
+                                    border-color: #F27321; color: #F27321;">আরো দেখুন</a>
       
       
                                   </div>
@@ -348,14 +348,14 @@
                         <div class="col">
                             <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <img src="images/book-1.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
+                                    <div class="col-lg-5">
+                                        <img src="images/book-1.png" class="w-100 h-100"  style="border-radius: 1rem;" alt="">
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                         <p style=" color: #532D80; padding-left: 1rem; padding-top: 5%;">প্রোগ্রামিং</p>
                                         </div>
-                                        <p class="fw-bold pt-2" style="font-size: 23px">রোবটিক্স ফর জুনিয়র্স</p>
+                                        <p class=" fw-bold pt-2" style="font-size: 23px;">রোবটিক্স ফর</p>
                                         <div class="d-flex">
                                             <div>
                                                 <img src="images/video.png" alt=""> 
@@ -373,13 +373,13 @@
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২৯৯৯</span></p>
-                                            <p class="ms-3"> <del style="color: #532D80;">৳৬০০০</del></p>
+                                            <p class="ms-1"> <del style="color: #532D80;">৳৬০০০</del></p>
                                             </div>
                                             
-                                            <p class="px-2 py-1 ms-3 rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
+                                            <p class="btn-sm rounded-3" style="background-color: #532D80; color: white;">৮ সপ্তাহ</p>
                                         </div>
         
-                                        <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                        <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                         border-color: #F27321; color: #F27321;">আরো দেখুন</a>
         
         
@@ -406,42 +406,43 @@
 
             </div>
 
-              <div class="container-fluid mt-5 mb-5" style="padding-left: 4rem; padding-right: 4rem;">
+              <div class="container mt-5 mb-5" style="">
                   
                 <div class="row gy-4">
                     <div class="col">
                         <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-5">
                                     <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
-                                    <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
+                                        <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
                                     </div>
-                                    <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/video.png" alt=""> 
                                         </div>
-                                            <p class="ms-2">Enamul Haque</p>
+                                        <p class="ms-2">Enamul Haque</p>
                                     </div>
     
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/live-streaming.png" alt=""> 
                                         </div>
-                                    <p class="ms-2">English</p>
+                                        <p class="ms-2">English</p>
                                     </div>
     
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                        <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                         </div>
+                                        
                                     </div>
     
-                                    <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; border-style: solid;
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                     border-color: #F27321; color: #F27321;">আরো দেখুন</a>
     
     
@@ -452,39 +453,38 @@
                     <div class="col">
                       <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                           <div class="row">
-                              <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
-                              </div>
-                              <div class="col-lg-8">
-                                  <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
+                            </div>
+                            <div class="col-lg-7">
+                                <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                     <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
-                                  </div>
-                                  <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/video.png" alt=""> 
-                                        </div>
-                                            <p class="ms-2">Enamul Haque</p>
+                                </div>
+                                <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="images/video.png" alt=""> 
                                     </div>
-    
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/live-streaming.png" alt=""> 
-                                        </div>
+                                    <p class="ms-2">Enamul Haque</p>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="images/live-streaming.png" alt=""> 
+                                    </div>
                                     <p class="ms-2">English</p>
-                                  </div>
-  
-                                  <div class="d-flex justify-content-between">
+                                </div>
+
+                                <div class="d-flex justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                        <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
-                                        
+                                    <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                     </div>
                                     
                                 </div>
-  
-                                  <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
-                                  border-color: #F27321; color: #F27321;">আরো দেখুন</a>
+
+                                <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
+                                border-color: #F27321; color: #F27321;">আরো দেখুন</a>
   
   
                               </div>
@@ -494,38 +494,37 @@
                     <div class="col">
                         <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-5">
                                     <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                         <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
                                     </div>
-                                    <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/video.png" alt=""> 
                                         </div>
-                                            <p class="ms-2">Enamul Haque</p>
+                                        <p class="ms-2">Enamul Haque</p>
                                     </div>
     
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/live-streaming.png" alt=""> 
                                         </div>
-                                    <p class="ms-2">English</p>
+                                        <p class="ms-2">English</p>
                                     </div>
     
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                            <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
-                                            
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                         </div>
                                         
                                     </div>
     
-                                    <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                     border-color: #F27321; color: #F27321;">আরো দেখুন</a>
     
     
@@ -539,38 +538,37 @@
                         <div class="col">
                             <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-5">
                                         <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                             <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
                                         </div>
-                                        <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/video.png" alt=""> 
-                                        </div>
+                                        <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="images/video.png" alt=""> 
+                                            </div>
                                             <p class="ms-2">Enamul Haque</p>
-                                    </div>
-    
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/live-streaming.png" alt=""> 
                                         </div>
-                                    <p class="ms-2">English</p>
+        
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="images/live-streaming.png" alt=""> 
+                                            </div>
+                                            <p class="ms-2">English</p>
                                         </div>
         
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                                <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
-                                                
+                                            <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                             </div>
                                             
                                         </div>
         
-                                        <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                        <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                         border-color: #F27321; color: #F27321;">আরো দেখুন</a>
         
         
@@ -581,82 +579,83 @@
                         <div class="col">
                           <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                               <div class="row">
-                                  <div class="col-lg-4">
+                                <div class="col-lg-5">
                                     <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
-                                  </div>
-                                  <div class="col-lg-8">
-                                      <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
+                                </div>
+                                <div class="col-lg-7">
+                                    <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                         <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
-                                      </div>
-                                      <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
+                                    </div>
+                                    <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/video.png" alt=""> 
                                         </div>
-                                            <p class="ms-2">Enamul Haque</p>
+                                        <p class="ms-2">Enamul Haque</p>
                                     </div>
     
                                     <div class="d-flex">
                                         <div>
                                             <img src="images/live-streaming.png" alt=""> 
                                         </div>
-                                    <p class="ms-2">English</p>
-                                      </div>
-      
-                                      <div class="d-flex justify-content-between">
+                                        <p class="ms-2">English</p>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-between">
                                         <div class="d-flex align-items-center">
                                             <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                            <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
-                                            
+                                        <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                         </div>
                                         
                                     </div>
-      
-                                      <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
-                                      border-color: #F27321; color: #F27321;">আরো দেখুন</a>
+    
+                                    <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
+                                    border-color: #F27321; color: #F27321;">আরো দেখুন</a>
       
       
                                   </div>
                               </div>
                           </div>
                         </div>
-                        <div class="col">
+                        <div class="col position-relative">
                             <div class="p-3 border" style="height: auto; width: auto; border-radius: 1rem; background-color: #E6E4E4;">
                                 <div class="row">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-5">
                                         <img src="images/book-2.png" class="w-100 h-100" style="border-radius: 1rem;" alt="">
                                     </div>
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <div style="background-image: url(images/cat_shape.png); height:35px; width: 100px;">
                                             <p style=" color: #532D80; padding-left: 2rem; padding-top: 5%;">বুক</p>
                                         </div>
-                                        <p class=" fw-bold pt-2" style="font-size: 23px;">Digital Transformation...</p>
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/video.png" alt=""> 
-                                        </div>
+                                        <p class=" fw-bold pt-2" style="font-size: 23px;">Spoken English</p>
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="images/video.png" alt=""> 
+                                            </div>
                                             <p class="ms-2">Enamul Haque</p>
-                                    </div>
-    
-                                    <div class="d-flex">
-                                        <div>
-                                            <img src="images/live-streaming.png" alt=""> 
                                         </div>
-                                    <p class="ms-2">English</p>
+        
+                                        <div class="d-flex">
+                                            <div>
+                                                <img src="images/live-streaming.png" alt=""> 
+                                            </div>
+                                            <p class="ms-2">English</p>
                                         </div>
         
                                         <div class="d-flex justify-content-between">
                                             <div class="d-flex align-items-center">
                                                 <p class="fw-bold fs-5" style="color: #532D80;">৳<span>২০০</span></p>
-                                                <p class="ms-3"> <del style="color: #532D80;">৳৮৫৮</del></p>
-                                                
+                                            <p class="ms-1"> <del style="color: #532D80;">৳৮৫৮</del></p>
                                             </div>
+                                            
                                         </div>
         
-                                        <a href="" class="px-2 py-1 rounded-3" style=" text-decoration: none; color: black; border-style: solid;
+                                        <a href="" class="px-3 rounded-3" style=" text-decoration: none; border-style: solid;
                                         border-color: #F27321; color: #F27321;">আরো দেখুন</a>
         
-        
+                                        <div class="position-absolute top-100 start-100 translate-middle" style="z-index: -1; margin-top: -2rem;">
+                                            <img src="images/e_bbok shape.png" alt="">
+                                        </div>
                                     </div>
                                     
                                 </div>
@@ -665,9 +664,9 @@
                       </div>
                   </div>
               </div>
-              <div>
+             <!--  <div>
                 <img src="images/e_bbok shape.png" alt="" style="float:right; margin-top: -11rem; right: -5rem">
-            </div>
+            </div> -->
         </section>
         <!-- get all things content section-->
         <section class="mojaru-content-section">
@@ -854,7 +853,7 @@
                 <p class="fs-2 d-flex justify-content-center pt-5 fw-bold">কিভাবে মজারু কাজ করে</p>
             </div>
             <div class="" style="margin: 3rem 12rem 5rem 12rem;">
-                <div class="row" style="column-gap: 5rem;">
+                <div class="row gy-5" style="column-gap: 5rem;">
                     <div class="col" style="background-color: #E6E4E4; border-top-left-radius: 5rem; border-bottom-left-radius: 5rem;">
                         <div class="p-4">
                             <h3 class="text-center" style="color: #D0202F">নতুন অ্যাকাউন্ট তৈরি</h3>                        
@@ -920,7 +919,7 @@
 
     <!-- footer section -->
     <footer class="container-fluid bg-dark">
-        <div class="row p-5 gy-3" style="column-gap: 1rem;">
+        <div class="row p-5 gy-5" style="column-gap: 1rem;">
             <div class="col">
                 <div>
                     <img src="images/logo_white.png" alt="">
