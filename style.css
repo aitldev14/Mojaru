@@ -16,8 +16,8 @@ nav{
 /* top section */
 .background {
     width: 100%;
-    height: 100vh;
-    background: url('images/bg_slider.png') center/contain;
+    height: 30%;
+    background: url('images/bg_sliders.png') center/contain;
     background-repeat: no-repeat;
     background-size:cover;
 }
