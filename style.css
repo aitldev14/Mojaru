@@ -1,121 +1,137 @@
-*{
-    font-family: 'Hind Siliguri', sans-serif;
+* {
+  font-family: "Hind Siliguri", sans-serif;
 }
+
 
 /* header part */
-header{
-    border-bottom: 2px solid #532D80;
-    margin-bottom: 1px;;
+header {
+  border-bottom: 2px solid #532d80;
+  margin-bottom: 1px;
 }
 
-nav{
-    padding: 1rem 3rem; 
-    background-color: #FEFEFE;
+nav {
+  padding: 1rem 3rem;
+  background-color: #fefefe;
 }
 
 /* main part */
 /* top section */
 .background {
-    width: 100%;
-    height: 30%;
-    background: url('images/bg_sliders.png') center/contain;
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-top: 2px solid #FFCE39;
+  width: 100%;
+  height: 30%;
+  background: url("images/bg_sliders.png") center/contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 2px solid #ffce39;
 }
 
-.text_color_org{
-    color: #F27321;
+.text_color_org {
+  color: #f27321;
 }
 
-.text_color_blue{
-    color: #532D80;
+.text_color_blue {
+  color: #532d80;
 }
 
-.bg_color_org{
-    background-color: #F27321;
+.bg_color_org {
+  background-color: #f27321;
 }
 
-.bg_color_gray{
-    background-color: #ECECEC;
+.bg_color_gray {
+  background-color: #ececec;
 }
 
-.bg_color_blue{
-    background-color: #532D80;
+.bg_color_blue {
+  background-color: #532d80;
 }
-.border_all{
-    border: 2px solid #532D80;
+.border_all {
+  border: 2px solid #532d80;
 }
 
 /* course section part */
-.a_tag_decoration{
-    text-decoration: none;
+.a_tag_decoration {
+  text-decoration: none;
 }
 
-.card_body{
-    height: auto;
-    width: auto;
-    border-radius: 1rem;
-    background-color: #E6E4E4;
+.card_body {
+  height: auto;
+  width: auto;
+  border-radius: 1rem;
+  background-color: #e6e4e4;
 }
 
-.book_border{
-    border-radius: 1rem;
+.book_border {
+  border-radius: 1rem;
 }
 
-.card_top_bg{
-    background-image: url(images/cat_shape.png);
-    height:35px;
-    width: 100px;
+.card_top_bg {
+  background-image: url(images/cat_shape.png);
+  height: 35px;
+  width: 100px;
 }
 
-.card_top_course_title_position{
-    padding-left: 1rem;
-    padding-top: 5%;
+.card_top_course_title_position {
+  padding-left: 1rem;
+  padding-top: 5%;
 }
 
-.course_book_name_size{
-    font-size: 23px;
+.course_book_name_size {
+  font-size: 23px;
 }
 
-.card_top_book_title_position{
-    padding-left: 2rem; 
-    padding-top: 5%;
+.card_top_book_title_position {
+  padding-left: 2rem;
+  padding-top: 5%;
 }
 
-.button_border{
-    border:2px solid #F27321;
+.button_border {
+  border: 2px solid #f27321;
 }
 
 /* get all things content section */
-.mojaru-content-section{
-
-    background-color: #532D80;
-    margin-top: 5rem;
+.mojaru-content-section {
+  background-color: #532d80;
+  margin-top: 5rem;
 }
 
 /* thinking content section */
-.mojaru-thinking-content-section{
-    background-color: #F4F4F4;
-    padding-bottom: 4rem;
+.mojaru-thinking-content-section {
+  background-color: #f4f4f4;
+  padding-bottom: 4rem;
 }
 
 /* how it work section */
-.first-part{
-    background-color: #E6E4E4;
-    border-top-left-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+.first-part {
+  background-color: #e6e4e4;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
 
-.second-part{
-    background-color: #E6E4E4;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+.second-part {
+  background-color: #e6e4e4;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-.third-part{
-    background-color: #E6E4E4;
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);
+.third-part {
+  background-color: #e6e4e4;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);
+}
+
+/* responsive section */
+
+@media only screen and (max-width: 600px) {
+  #book-bottom-img {
+    display: none;
+  }
+
+  .thinking-bg-img {
+    display: none;
+  }
+
+  #input {
+    padding-left: 0rem;
+  }
 }
