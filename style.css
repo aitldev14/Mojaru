@@ -5,6 +5,7 @@
 /* header part */
 header{
     border-bottom: 2px solid #532D80;
+    margin-bottom: 1px;;
 }
 
 nav{
@@ -20,6 +21,7 @@ nav{
     background: url('images/bg_sliders.png') center/contain;
     background-repeat: no-repeat;
     background-size:cover;
+    border-top: 2px solid #FFCE39;
 }
 
 .text_color_org{
@@ -96,4 +98,24 @@ nav{
 .mojaru-thinking-content-section{
     background-color: #F4F4F4;
     padding-bottom: 4rem;
+}
+
+/* how it work section */
+.first-part{
+    background-color: #E6E4E4;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.second-part{
+    background-color: #E6E4E4;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.third-part{
+    background-color: #E6E4E4;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);
 }
