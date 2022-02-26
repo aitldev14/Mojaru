@@ -416,4 +416,8 @@ nav {
     padding-right: 0px;
   }
   
+  .question-bg-top-img{
+    z-index: -1;
+  }
+  
 }
