@@ -49,12 +49,12 @@
   bottom: 10%;
   background-color: #532d80;
 }
-.custom:hover::before {
+/* .custom:hover::before {
   width: 105%;
   height: 2px;
   top: 10%;
   background-color: #532d80;
-}
+} */
 
 /* header part */
 header {
@@ -303,7 +303,7 @@ nav {
     right: 5%;
   }
   
-  .slider::before,
+/*   .slider::before,
   .slider::after,
   .slide__prev,
   .slide__next {
@@ -315,7 +315,7 @@ nav {
     border-width: 0 4px 4px 0;
     padding: 3px;
     box-sizing: border-box;
-  }
+  } */
   
   .slider::before,
   .slider::after {
