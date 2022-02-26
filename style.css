@@ -1,5 +1,7 @@
 * {
   font-family: "Hind Siliguri", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .custom {
@@ -75,6 +77,9 @@ nav {
   background-size: cover;
   border-top: 2px solid #ffce39;
 }
+.top-boy-section{
+  margin-top: -12rem;
+}
 
 .text_color_org {
   color: #f27321;
@@ -145,10 +150,30 @@ nav {
   margin-top: 5rem;
 }
 
+.mojaru-content-section-mobile-view{
+  display: none;
+}
+
 /* thinking content section */
 .mojaru-thinking-content-section {
   background-color: #f4f4f4;
   padding-bottom: 4rem;
+}
+#opinion-images-section{
+  padding: 2rem 0rem; 
+  border-right: 2px solid #F4F4F4;
+}
+#mobile-view-identity-part{
+  padding-top:8rem;
+}
+.opinion-detail{
+  background-image: url(images/quote.png); 
+  background-repeat: no-repeat; 
+  margin-left: auto; 
+  margin-top: 5rem;
+}
+#text{
+  margin-top: 5rem;
 }
 
 /* how it work section */
@@ -171,9 +196,16 @@ nav {
   clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);
 }
 
+
+
+
 /* responsive section */
 
 @media only screen and (max-width: 600px) {
+  *{
+    padding: 0;
+    margin: 0;
+  }
   #book-bottom-img {
     display: none;
   }
@@ -182,7 +214,195 @@ nav {
     display: none;
   }
 
-  #input {
-    padding-left: 0rem;
+  .top-boy-section{
+    margin-top: -1rem;
   }
+
+  /* get all thing content section */
+  .slider-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mojaru-content-section-mobile-view{
+    display: block;
+  }
+
+  .mojaru-content-section{
+    display: none;
+  }
+  
+  .slider {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    scroll-snap-align: center;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: #532d80;
+    transform-origin: center center;
+    transform: scale(1);
+  }
+  
+  
+  
+  .slide a {
+    background: none;
+    border: none;
+  }
+  
+  a.slide__prev,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+  }
+  
+  a.slide__next,
+  .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+  }
+  
+  .slider::before,
+  .slider::after,
+  .slide__prev,
+  .slide__next {
+    position: absolute;
+    top: 48%;
+    width: 15px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+  }
+  
+  .slider__nav {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+  }
+  
+  .slider__navlink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 10px 0 10px;
+  }
+
+
+  /* thinking content section */
+
+  #mobile-view-identity-part{
+    padding-top:1rem;
+  }
+  #btn-opinion-more{
+    padding-bottom: 3rem;
+  }
+  .opinion-detail{
+    margin-top: 0px;
+    padding-bottom: 1rem;
+  }
+  #opinion-images-section{
+    padding: 0;
+  }
+
+  #text{
+    margin-top: 0rem;
+  }
+
+  .people-images{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  #image{
+    display: flex;
+    align-items: center;
+  }
+  #up-arrow{
+    transform: rotate(-90deg);
+    padding: 0;
+  }
+  #down-arrow{
+    transform: rotate(-90deg);
+    padding: 0;
+  }
+  #middle-persone{
+    padding: 0 1rem;
+  }
+
+  /* how it work section */
+  .first-part {
+    background-color: #e6e4e4;
+    border-radius: 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .second-part {
+    background-color: #e6e4e4;
+    border-radius: 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .third-part {
+    background-color: #e6e4e4;
+    border-radius: 0.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-bottom: 5rem;
+  }
+/* ask question section */
+  #write-message{
+    padding: 0;
+  }
+  #id{
+    padding-right: 0;
+  }
+
+  #input{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
 }
