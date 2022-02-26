@@ -374,10 +374,12 @@ nav {
   #up-arrow{
     transform: rotate(-90deg);
     padding: 0;
+    display: none;
   }
   #down-arrow{
     transform: rotate(-90deg);
     padding: 0;
+    display: none;
   }
   #middle-persone{
     padding: 0 1rem;
