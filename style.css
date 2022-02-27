@@ -67,6 +67,20 @@ nav {
   background-color: #fefefe;
 }
 
+nav .container .navbar-collapse .navbar-nav .active{
+   color: #532d80; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #F27321;
+}
+
+.nav-pills .nav-link, .nav-pills .show>.nav-link {
+  color: #000000;
+  background-color: #ECECEC;
+}
+
 /* main part */
 /* top section */
 .background {
@@ -142,6 +156,26 @@ nav {
 
 .button_border {
   border: 2px solid #f27321;
+}
+
+.zoom-course {
+  transition: transform .5s;
+}
+
+.zoom-course:hover {
+  -ms-transform: scale(1.10);
+  transform: scale(1.10); 
+  cursor: pointer;
+}
+
+.book-animation{
+  transition: 0.5s ease-in-out;
+}
+  
+
+.book-animation:hover{
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 /* get all things content section */
@@ -262,8 +296,6 @@ nav {
     scroll-snap-type: x mandatory;
 
   }
-  
-  
   
   .slide {
     display: flex;

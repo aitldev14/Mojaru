@@ -1,3 +1,19 @@
+/* navber */
+
+let a = document.querySelectorAll("nav .container .navbar-collapse .navbar-nav a");
+for (let i = 0, length = a.length; i < length; i++) {
+  a[i].onclick = function() {
+    var b = document.querySelector("nav .container .navbar-collapse .navbar-nav .active");
+    if (b) b.classList.remove("active");
+    this.classList.add('active');
+  };
+}
+
+
+
+
+
+
 
 function first_image(){
   document.getElementById("openion-2").innerHTML =  document.getElementById("openion-1").innerText;
@@ -93,6 +109,11 @@ document.getElementById("down-arrow").addEventListener("click", function(){
       console.log("None");
   }
 });
+
+
+
+
+
 
 
 
