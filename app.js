@@ -23,7 +23,7 @@ function first_image(){
   document.getElementById("3").style.cssText = `opacity: 0.5; height: 65px; width: 65px; border-radius: 50%;`;
   document.getElementById("name-2").innerHTML = document.getElementById("name-1").innerText;
   document.getElementById("identity-2").innerHTML = document.getElementById("identity-1").innerText; 
-   document.getElementById("1").classList.add("active");
+  document.getElementById("1").classList.add("active");
   document.getElementById("2").classList.remove("active");
   document.getElementById("3").classList.remove("active");
    
