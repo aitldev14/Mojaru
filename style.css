@@ -129,6 +129,13 @@ nav .container .navbar-collapse .navbar-nav .active {
 }
 
 /* course section part */
+.book_web_view, .course_web_view{
+  display: block;
+}
+
+.book_mobile_view, .course_mobile_view{
+  display: none;
+}
 .a_tag_decoration {
   text-decoration: none;
 }
@@ -171,24 +178,7 @@ nav .container .navbar-collapse .navbar-nav .active {
   border: 2px solid #f27321;
 }
 
-.zoom-course {
-  transition: transform 0.5s;
-}
 
-.zoom-course:hover {
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.book-animation {
-  transition: 0.5s ease-in-out;
-}
-
-.book-animation:hover {
-  margin-top: 5px;
-  cursor: pointer;
-}
 
 /* get all things content section */
 .mojaru-content-section {
@@ -244,6 +234,28 @@ nav .container .navbar-collapse .navbar-nav .active {
 
 /* responsive section */
 
+@media only screen and (min-width: 601px){
+
+  .zoom-course {
+    transition: transform 0.5s;
+  }
+  
+  .zoom-course:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .book-animation {
+    transition: 0.5s ease-in-out;
+  }
+  
+  .book-animation:hover {
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   * {
     padding: 0;
@@ -268,6 +280,14 @@ nav .container .navbar-collapse .navbar-nav .active {
 
   .mobile-view-space {
     margin-top: 1rem;
+  }
+
+  .book_web_view, .course_web_view{
+    display: none;
+  }
+  
+  .book_mobile_view, .course_mobile_view{
+    display: block;
   }
 
   /* get all thing content section */
