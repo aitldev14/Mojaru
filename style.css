@@ -44,9 +44,9 @@
 }
 
 .custom:hover::after {
-  width: 105%;
-  height: 2px;
-  bottom: 10%;
+  width: 100%;
+  height: 3px;
+  bottom: -20%;
   background-color: #532d80;
 }
 /* .custom:hover::before {
@@ -58,13 +58,6 @@
 
 /* header part */
 
-.text_live_class, .text_free_class, .text_week,.balance_symbol{
-  margin-bottom: 0;
-}
-
-#free_class{
-  margin-bottom: 0.5rem;
-}
 header {
   border-bottom: 2px solid #532d80;
   margin-bottom: 1px;
@@ -79,6 +72,33 @@ nav .container .navbar-collapse .navbar-nav .active {
   color: #532d80;
 }
 
+
+nav .container .navbar-collapse .navbar-nav .active:after,
+nav .container .navbar-collapse .navbar-nav .active:before{
+bottom: 0%;
+left: 50%;
+border: solid transparent;
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+nav .container .navbar-collapse .navbar-nav .active:after{
+  border-bottom-color: #fff;
+	border-width: 0px;
+	margin-left: 0px;
+    z-index: 1;
+}
+nav .container .navbar-collapse .navbar-nav .active:before{
+  border-bottom-color:  #532d80;
+	border-width: 10px;
+	margin-left: -9px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
@@ -89,6 +109,15 @@ nav .container .navbar-collapse .navbar-nav .active {
 .nav-pills .show > .nav-link {
   color: #000000;
   background-color: #ececec;
+}
+
+
+.text_live_class, .text_free_class, .text_week,.balance_symbol{
+  margin-bottom: 0;
+}
+
+#free_class{
+  margin-bottom: 0.5rem;
 }
 
 /* main part */
@@ -260,6 +289,14 @@ nav .container .navbar-collapse .navbar-nav .active {
   * {
     padding: 0;
     margin: 0;
+  }
+
+  nav .container .navbar-collapse .navbar-nav .active:before{
+    border-bottom-color:  #532d80;
+    border-width: 0px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+    z-index: 1;
   }
 
   #btn-login {
